@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxe Glow — Premium beauty products. Discover skincare, makeup, haircare & fragrances crafted for radiance.">
+  <title>Luxe Glow — Premium Beauty Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Luxe<span>Glow</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="products.html?category=skincare">Skincare</a>
+        <a href="products.html?category=makeup">Makeup</a>
+        <a href="products.html?category=fragrance">Fragrance</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="window.location.href='cart.html'" title="Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="tag">✨ New Collection 2026</span>
+        <h1>Discover Your <em>Natural Glow</em></h1>
+        <p>Indulge in premium beauty essentials crafted with the finest ingredients. Reveal your radiance with Luxe Glow.</p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+          <a href="#categories" class="btn btn-secondary btn-lg">Explore</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Products</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">4.9</div>
+            <div class="stat-label">Avg Rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-banner.png" alt="Luxe Glow Beauty Collection">
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Shop by Category</h2>
+        <p class="subtitle">Find your perfect beauty routine</p>
+        <span class="accent-line"></span>
+      </div>
+      <div class="categories-grid">
+        <a href="products.html?category=skincare" class="category-card animate-on-scroll">
+          <div class="cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="M12 6v12M6 12h12"/>
+            </svg>
+          </div>
+          <h3>Skincare</h3>
+          <p>Serums, Creams & More</p>
+        </a>
+        <a href="products.html?category=makeup" class="category-card animate-on-scroll">
+          <div class="cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Makeup</h3>
+          <p>Lipsticks, Palettes & More</p>
+        </a>
+        <a href="products.html?category=haircare" class="category-card animate-on-scroll">
+          <div class="cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Haircare</h3>
+          <p>Shampoos, Oils & More</p>
+        </a>
+        <a href="products.html?category=fragrance" class="category-card animate-on-scroll">
+          <div class="cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+            </svg>
+          </div>
+          <h3>Fragrance</h3>
+          <p>Perfumes & Body Mists</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRENDING PRODUCTS -->
+  <section class="section" style="background: var(--color-bg-warm);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Trending Now</h2>
+        <p class="subtitle">Our customers' favorite picks this season</p>
+        <span class="accent-line"></span>
+      </div>
+      <div class="products-grid" id="featured-products">
+        <!-- Products injected by JS -->
+      </div>
+      <div class="text-center" style="margin-top: var(--space-2xl);">
+        <a href="products.html" class="btn btn-secondary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section class="section">
+    <div class="container">
+      <div class="promo-banner animate-on-scroll">
+        <div class="promo-text">
+          <span class="promo-tag">Limited Offer</span>
+          <h2>Get 30% Off Your First Order</h2>
+          <p>Use code <strong style="color: var(--color-accent-light);">GLOW30</strong> at checkout. Valid for new customers only.</p>
+          <a href="products.html" class="btn btn-primary">Shop the Sale</a>
+        </div>
+        <div class="promo-image">
+          <img src="images/product-perfume.png" alt="Special Offer">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="background: var(--color-bg-warm);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>What Our Customers Say</h2>
+        <p class="subtitle">Real reviews from real beauty lovers</p>
+        <span class="accent-line"></span>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="quote-icon">"</div>
+          <p class="review-text">The Radiance Revival Serum completely transformed my skin. I've been using it for 3 months and the glow is incredible. Best skincare investment I've ever made!</p>
+          <div class="reviewer">
+            <div class="avatar">S</div>
+            <div class="reviewer-info">
+              <h4>Sarah Mitchell</h4>
+              <p>Verified Buyer</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="quote-icon">"</div>
+          <p class="review-text">I'm obsessed with the Golden Hour Palette! The pigmentation is unreal and the shades blend like butter. It's become my everyday go-to for both work and evening looks.</p>
+          <div class="reviewer">
+            <div class="avatar">A</div>
+            <div class="reviewer-info">
+              <h4>Aisha Patel</h4>
+              <p>Verified Buyer</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="quote-icon">"</div>
+          <p class="review-text">The Éclat de Rose perfume is absolutely divine. I get compliments everywhere I go. The longevity is impressive — it truly lasts from morning to night.</p>
+          <div class="reviewer">
+            <div class="avatar">M</div>
+            <div class="reviewer-info">
+              <h4>Maria Chen</h4>
+              <p>Verified Buyer</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-section animate-on-scroll">
+        <h2>Join the Glow Club</h2>
+        <p>Subscribe for exclusive offers, beauty tips, and early access to new arrivals.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Welcome to the Glow Club! 🎉'); this.reset();">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Luxe<span>Glow</span></a>
+          <p>Premium beauty products crafted with love and the finest ingredients. Your journey to radiance starts here.</p>
+          <div class="footer-social">
+            <a href="#" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" title="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" title="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.966 1.172-4.966s-.299-.598-.299-1.482c0-1.388.806-2.425 1.808-2.425.853 0 1.265.64 1.265 1.408 0 .858-.547 2.14-.828 3.33-.236.994.499 1.805 1.48 1.805 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.134-4.515 4.34 0 .859.331 1.781.745 2.282a.3.3 0 0 1 .069.288l-.278 1.133c-.044.183-.145.222-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.527-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="products.html">Shop All</a></li>
+            <li><a href="products.html?category=skincare">Skincare</a></li>
+            <li><a href="products.html?category=makeup">Makeup</a></li>
+            <li><a href="products.html?category=haircare">Haircare</a></li>
+            <li><a href="products.html?category=fragrance">Fragrance</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Luxe Glow. All rights reserved.</p>
+        <div class="payment-icons">
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
